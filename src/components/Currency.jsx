@@ -2,7 +2,7 @@ import React from 'react'
 import useApi from './useApi'
 
 function Currency() {
-    const data = useApi()
+    const { data } = useApi()
 
     return (
         <>
