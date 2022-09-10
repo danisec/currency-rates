@@ -1,21 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+import useApi from './useApi'
 
 function Currency() {
-    const API = 'https://api.currencyfreaks.com/latest?apikey=e33d94cb008c43208aa4ca9b092603c5'
-
-    const [data, setData] = useState([])
-
-    const getCurrency = async () => {
-        try {
-            const res = await axios.get((API))
-            setData(res.data)
-        } catch (error) { }
-    }
-
-    useEffect(() => {
-        getCurrency()
-    }, [])
+    const data = useApi()
 
     return (
         <>
