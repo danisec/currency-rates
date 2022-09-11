@@ -21,7 +21,7 @@ function Currency() {
                                     Exchange Rate
                                 </th>
                                 <th scope="col" className="py-3 px-6">
-                                    We Shell
+                                    We Sell
                                 </th>
                             </tr>
                         </thead>
